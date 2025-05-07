@@ -1,0 +1,78 @@
+.page {
+  --color-background: #121212;
+  --color-text: #ECECEC;
+  --color-text-muted: #999999;
+  --color-accent: #A7C7A3;
+  --color-accent-hover: #8DB894;
+  --color-muted: #1E1E1E;
+  --color-card: #1E1E1E;
+  --color-divider: #2C2C2C;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+  font-family: var(--font-primary);
+}
+
+.header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--color-divider);
+  position: relative;
+  z-index: 1;
+}
+
+.headerContent {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  opacity: 0.9;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.subTagline {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 1200px) {
+  .headerContent {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+} 

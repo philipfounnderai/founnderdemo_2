@@ -1,0 +1,259 @@
+.aboutPage {
+  background: #181C1A;
+  color: #F5F7F6;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 4rem;
+}
+
+.heroSection {
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #232825 0%, #181C1A 100%);
+}
+
+.heroTitle {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #E6F4EA;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  color: #B6CFC2;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #D1E7D6;
+}
+
+.sectionSubheading {
+  font-size: 1.15rem;
+  color: #A7C7A3;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.1rem;
+  color: #ECECEC;
+  font-size: 1.08rem;
+}
+
+.bulletList li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: #A7C7A3;
+  font-size: 1.1rem;
+  top: 0.1rem;
+}
+
+.stepsGrid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stepCard {
+  background: #232825;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.stepCard:hover {
+  box-shadow: 0 4px 24px 0 rgba(167,199,163,0.10);
+}
+
+.stepNumber {
+  background: #A7C7A3;
+  color: #232825;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.stepTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #E6F4EA;
+}
+
+.stepDesc {
+  color: #C7D6D0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.comingSoonGrid {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comingSoonCard {
+  background: #232825;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.comingSoonCard:hover {
+  box-shadow: 0 4px 24px 0 rgba(167,199,163,0.10);
+}
+
+.comingSoonTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #E6F4EA;
+  margin-bottom: 0.5rem;
+}
+
+.comingSoonStatus {
+  color: #A7C7A3;
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.libraryPreviewGrid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: flex-start;
+}
+
+.libraryCategory {
+  min-width: 180px;
+  flex: 1 1 180px;
+}
+
+.libraryCategoryTitle {
+  font-size: 1.05rem;
+  color: #A7C7A3;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.libraryList {
+  list-style: disc inside;
+  color: #ECECEC;
+  margin: 0 0 1.5rem 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem 1rem 0 1rem;
+}
+
+.ctaText {
+  font-size: 1.3rem;
+  color: #E6F4EA;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.ctaButton {
+  background: #A7C7A3;
+  color: #232825;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(167,199,163,0.10);
+}
+
+.ctaButton:hover {
+  background: #8DB894;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .stepsGrid, .comingSoonGrid, .libraryPreviewGrid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .stepCard, .comingSoonCard, .libraryCategory {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 2.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .section {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+  .ctaSection {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .ctaText {
+    font-size: 1.05rem;
+  }
+  .ctaButton {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+} 

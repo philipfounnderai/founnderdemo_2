@@ -1,0 +1,156 @@
+.faqPage {
+  background: #181C1A;
+  color: #F5F7F6;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Sticky Navbar handled by Layout/Navbar */
+
+.heroSection {
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #232825 0%, #181C1A 100%);
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  color: #E6F4EA;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  color: #B6CFC2;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.faqSection {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0 1.5rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faqCard {
+  background: #232825;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  padding: 0;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.faqCard:hover {
+  box-shadow: 0 4px 24px 0 rgba(167,199,163,0.10);
+}
+
+.faqQuestion {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #A7C7A3;
+  padding: 1.5rem 2rem 1rem 2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 16px 16px 0 0;
+}
+
+.faqQuestion:focus {
+  background: #202823;
+}
+
+.faqAnswer {
+  color: #F5F7F6;
+  font-size: 1.05rem;
+  padding: 0 2rem 1.5rem 2rem;
+  background: none;
+  border-radius: 0 0 16px 16px;
+  transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s;
+  opacity: 1;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem 1rem 0 1rem;
+}
+
+.ctaPrompt {
+  font-size: 1.3rem;
+  color: #E6F4EA;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.ctaButton {
+  background: #A7C7A3;
+  color: #232825;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(167,199,163,0.10);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  background: #8DB894;
+  color: #fff;
+}
+
+/* Highlight FAQ in nav (assumes .active or .highlight class) */
+.navLinkActive, .navLink.highlight {
+  color: #A7C7A3 !important;
+  font-weight: 700;
+  background: rgba(167,199,163,0.08);
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    padding: 2.5rem 0.5rem 1.5rem 0.5rem;
+  }
+  .heroTitle {
+    font-size: 1.5rem;
+  }
+  .faqSection {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .faqQuestion {
+    font-size: 1rem;
+    padding: 1.2rem 1rem 0.8rem 1rem;
+  }
+  .faqAnswer {
+    font-size: 0.98rem;
+    padding: 0 1rem 1rem 1rem;
+  }
+  .ctaSection {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .ctaPrompt {
+    font-size: 1.05rem;
+  }
+  .ctaButton {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+} 

@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.navLink:hover {
+  opacity: 1;
+}
+
+.earlyAccess {
+  background: var(--color-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  opacity: 1;
+  transition: background-color 0.2s;
+}
+
+.earlyAccess:hover {
+  background: var(--color-accent-hover);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} 
