@@ -376,6 +376,11 @@
     gap: 2rem;
   }
 
+  .splitLayout::before,
+  .splitLayout::after {
+    display: none !important;
+  }
+
   .filmCards,
   .testimonialGrid {
     grid-template-columns: 1fr;
